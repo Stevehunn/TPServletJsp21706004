@@ -12,6 +12,15 @@ import java.util.HashSet;
 @WebServlet(name = "deleteAccount", value = "/deleteAccount")
 
 public class DeleteAccount extends HttpServlet {
+
+    /**
+     * Display the Delete form.
+     *
+     * @param request {@link HttpServletRequest} The HTTP request filled with
+     * the user data.
+     * @param response {@link HttpServletResponse} The HTTP response we want
+     * to send to the user.
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // We read the login and password given by the user.
         HttpSession session = request.getSession();

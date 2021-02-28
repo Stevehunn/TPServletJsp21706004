@@ -59,9 +59,6 @@ public class Login extends HttpServlet {
                 if (currentUser.getUsername().equals(givenLogin) && currentUser.getPassword().equals(givenPassword)) {
                     System.out.println("found");
                     session.setAttribute("login", givenLogin);
-                    //response.sendRedirect("page1"); // TODO // CHANGEME
-                    //request.getRequestDispatcher("page1.jsp").forward(request, response); // Solution de Liza
-
                     return;
                 }
             }

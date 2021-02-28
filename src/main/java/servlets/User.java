@@ -2,6 +2,7 @@ package servlets;
 
 import java.util.Objects;
 
+//Construteur de la class User
 public class User {
     private String username;
     private String firstName;

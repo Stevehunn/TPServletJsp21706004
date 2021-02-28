@@ -19,7 +19,7 @@ public class Register extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     /**
-     * Display the login form.
+     * Display the register form.
      *
      * @param request {@link HttpServletRequest} The HTTP request filled with
      * the user data.
@@ -37,7 +37,7 @@ public class Register extends HttpServlet {
     }
 
     /**
-     * Handle the login form.
+     * Handle the register form.
      *
      * @param request {@link HttpServletRequest} The HTTP request filled with
      * the user data.
