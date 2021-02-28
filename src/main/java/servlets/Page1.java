@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-//Problème de redirection
 @WebServlet(name = "page1", value = "/page1")
 
 public class Page1 extends HttpServlet {
