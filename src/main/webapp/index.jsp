@@ -16,6 +16,7 @@
 <a href="listuser">Liste des utilisateurs</a>
 <br/>
 <a href="deleteAccount">Supprimer son compte</a>
+<br/>
 <a href="page1.jsp">page1</a>
 </body>
 </html>

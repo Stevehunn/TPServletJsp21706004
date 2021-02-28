@@ -45,7 +45,7 @@ public class Login extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // We read the login and password given by the user.
-        String givenLogin = (String) request.getParameter("nomUtilisatuer");
+        String givenLogin = (String) request.getParameter("nomUtilisateur");
         String givenPassword = (String) request.getParameter("mdp");
         String contextPath = getServletContext().getContextPath();
 
