@@ -51,18 +51,25 @@ public class Login extends HttpServlet {
 
         HttpSession session = request.getSession();
         HashSet<User> users = (HashSet<User>) getServletContext().getAttribute("usersInfo");
+
+        System.out.println(givenLogin);
+        System.out.println(givenPassword);
         if (users == null){
             response.sendRedirect("register");
         }
         else {
             for (User currentUser : users) {
+                System.out.println(currentUser.getUsername());
+                System.out.println(currentUser.getPassword());
                 if (currentUser.getUsername().equals(givenLogin) && currentUser.getPassword().equals(givenPassword)) {
                     System.out.println("found");
                     session.setAttribute("login", givenLogin);
+                    response.sendRedirect(contextPath); // TODO // CHANGEME
+                    //request.getRequestDispatcher("page1.jsp").forward(request, response); // Solution de Liza
                     return;
                 }
             }
-            //response.sendRedirect("login");
+            response.sendRedirect("login");
         }
     }
 }
